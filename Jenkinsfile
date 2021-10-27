@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Test'){
             steps {
-                withMaven(maven : 'Apache_Maven_3.3.3'){
+                withMaven(maven : 'Apache_Maven_3.3.3') {
                         sh "mvn test"
                 }
 
