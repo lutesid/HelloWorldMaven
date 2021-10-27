@@ -16,13 +16,6 @@ pipeline {
 
             }
         }
-        stage('Deploy') {
-            steps {
-               withMaven(maven : 'Apache_Maven_3.3.3'){
-                        sh "mvn deploy"
-                }
 
-            }
-        }
     }
 }
